@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <figure>
+        <b>
+            x-rotate<input type="range" id="xrot" min="0" max="360" value="0" oninput="" onchange="">
+            <br>
+            y-rotate<input type="range" id="yrot" min="0" max="360" value="0" oninput="" onchange="">
+            <br>
+            box size<input type="range" id="box" min="0" max="5" step="0.1" value="1.7" oninput="" onchange="">
+            <br>
+        </b> 
+        <canvas id="test" width="256" height="256"></canvas>
+        <script type="module" src="./test.js"></script>
+    </figure>
+    <input type="file" id="fileInput">
+    <script src="./glftImporter.js"></script>
+    <p id="fileLoadInfo"></p>
+    <p id="content"></p>
+</body>
+</html>
